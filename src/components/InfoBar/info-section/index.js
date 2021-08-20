@@ -3,8 +3,8 @@ import {
   IconWrapper,
   InfoWrapper,
   CustomButton,
+  StyledText,
 } from "./styled";
-import { StyledText } from "../../styled-text/styled";
 
 const InfoSection = ({ Icon, InfoText, color, isClickable, onClick }) => (
   <InfoContainer>

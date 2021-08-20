@@ -15,3 +15,8 @@ export const InfoSectionWrapper = styled.div`
   gap: 30px;
   align-items: center;
 `;
+
+export const StyledText = styled.div`
+  font-weight: bolder;
+  justify-self: center;
+`;

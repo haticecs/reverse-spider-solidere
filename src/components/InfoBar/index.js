@@ -3,13 +3,12 @@
 //HIGHEST SCORE(USE MEMO)
 //RESTART(GAME FLOW)
 
-import { Container, InfoSectionWrapper } from "./styled";
-import { StyledText } from "../styled-text/styled";
+import { Container, InfoSectionWrapper, StyledText } from "./styled";
 import InfoSection from "./info-section";
 import AvTimerIcon from "@material-ui/icons/AvTimer";
 import EmojiEventsIcon from "@material-ui/icons/EmojiEvents";
 import LoopIcon from "@material-ui/icons/Loop";
-import useTimer from "../hooks/useTimer";
+import useTimer from "../../hooks/useTimer";
 
 const InfoBar = () => {
   //custom hook

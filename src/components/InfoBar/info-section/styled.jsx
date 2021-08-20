@@ -27,3 +27,7 @@ export const CustomButton = styled.button`
   padding: 5px;
   cursor: pointer;
 `;
+export const StyledText = styled.div`
+  font-weight: bolder;
+  justify-self: center;
+`;
