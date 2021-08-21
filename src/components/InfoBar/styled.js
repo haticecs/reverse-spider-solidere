@@ -2,12 +2,10 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  height: 30px;
+  height: 10px;
   background: linear-gradient(to right, #ffd65e 0%, #febf04 100%);
-  margin: 0 auto;
-  padding: 20px;
+  padding: 20px 30px;
 `;
 
 export const InfoSectionWrapper = styled.div`

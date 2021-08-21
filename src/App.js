@@ -1,11 +1,11 @@
-import logo from "./logo.svg";
 import "./App.css";
-import InfoBar from "./components/InfoBar/index";
+import Components from "./components";
 
 function App() {
   return (
     <div className="App">
-      <InfoBar />
+      <Components.InfoBar />
+      <Components.UpperScreen />
     </div>
   );
 }
