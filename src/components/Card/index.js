@@ -1,3 +1,5 @@
+//Card Props: Type, Suit and isBack
+
 import { CardWrapper, CenteredText, HeaderWrapper, StyledText } from "./styled";
 
 import HeartImg from "../../assets/heart.png";

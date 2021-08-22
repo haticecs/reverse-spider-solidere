@@ -5,7 +5,7 @@ export const Container = styled.div`
   justify-content: space-between;
   height: 10px;
   background: linear-gradient(to right, #ffd65e 0%, #febf04 100%);
-  padding: 20px 30px;
+  padding: 20px 40px;
 `;
 
 export const InfoSectionWrapper = styled.div`

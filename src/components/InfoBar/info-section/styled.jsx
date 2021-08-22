@@ -4,15 +4,13 @@ export const InfoContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 5px;
+  gap: 10px;
 `;
 
 export const IconWrapper = styled.div`
   display: flex;
   align-items: center;
-  width: 30px;
-  height: 30px;
-  color: ${(props) => props.color};
+  font-size: 24px;
 `;
 
 export const InfoWrapper = styled.div`

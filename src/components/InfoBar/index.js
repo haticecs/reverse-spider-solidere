@@ -1,13 +1,7 @@
-//TODO: Implement TIMER
-//SCORE STATE
-//HIGHEST SCORE(USE MEMO)
-//RESTART(GAME FLOW)
+//TODO : HIGHEST SCORE(USE MEMO) - RESTART(GAME FLOW)
 
 import { Container, InfoSectionWrapper, StyledText } from "./styled";
 import InfoSection from "./info-section";
-import AvTimerIcon from "@material-ui/icons/AvTimer";
-import EmojiEventsIcon from "@material-ui/icons/EmojiEvents";
-import LoopIcon from "@material-ui/icons/Loop";
 import useTimer from "../../hooks/useTimer";
 
 const InfoBar = () => {
@@ -21,14 +15,13 @@ const InfoBar = () => {
   return (
     <Container>
       <InfoSectionWrapper>
-        <InfoSection Icon={AvTimerIcon} InfoText={timerText} color="#E10600" />
-        <InfoSection Icon={EmojiEventsIcon} InfoText="0" color="#E10600" />
+        <InfoSection Icon="🕓" InfoText={timerText} />
+        <InfoSection Icon="🏆" InfoText="0" />
       </InfoSectionWrapper>
       <StyledText>Highest Score Ever: 1450</StyledText>
       <InfoSection
-        Icon={LoopIcon}
+        Icon="🚩"
         InfoText="RESTART"
-        color="#E10600"
         isClickable
         onClick={() => console.log("clicked")}
       />

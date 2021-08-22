@@ -1,3 +1,5 @@
+/* UseTimer  is used to create  Count Up Timer in the InfoBar
+ */
 import { useState, useEffect } from "react";
 
 const useTimer = () => {

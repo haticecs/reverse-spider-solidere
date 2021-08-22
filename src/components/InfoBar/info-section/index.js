@@ -1,3 +1,6 @@
+/* InfoSection is used in the InfoBar 3 times
+Info Section Props: Icon, InfoText, isClickable, onClick
+ */
 import {
   InfoContainer,
   IconWrapper,
@@ -6,11 +9,9 @@ import {
   StyledText,
 } from "./styled";
 
-const InfoSection = ({ Icon, InfoText, color, isClickable, onClick }) => (
+const InfoSection = ({ Icon, InfoText, isClickable, onClick }) => (
   <InfoContainer>
-    <IconWrapper color={color}>
-      <Icon />
-    </IconWrapper>
+    <IconWrapper>{Icon}</IconWrapper>
     {isClickable ? (
       <CustomButton onClick={onClick}>
         <StyledText>{InfoText}</StyledText>
