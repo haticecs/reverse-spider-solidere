@@ -1,5 +1,5 @@
-//Card Props: Type, Suit and isBack
-
+//Card Props: Type and Suit -> Draggable Card
+import { ItemTypes } from "./constants";
 import { CardWrapper, CenteredText, HeaderWrapper, StyledText } from "./styled";
 
 import HeartImg from "../../assets/heart.png";
@@ -15,18 +15,18 @@ const imageHandler = (Suit) => {
   else return SpadesImg;
 };
 
-const Card = ({ Type, Suit, isBack }) => {
+const Card = ({ rank, suit, top, isBack }) => {
   return isBack ? (
     <CardWrapper style={{ padding: 0 }}>
-      <img src={BackImg} alt={Type} style={{ flex: 1 }} />
+      <img src={BackImg} alt={rank} style={{ flex: 1 }} />
     </CardWrapper>
   ) : (
-    <CardWrapper>
+    <CardWrapper top={top}>
       <HeaderWrapper>
-        <StyledText>{Type}</StyledText>
-        <img src={imageHandler(Suit)} alt={Type} width={30} height={30} />
+        <StyledText>{rank}</StyledText>
+        <img src={imageHandler(suit)} alt={rank} width={30} height={30} />
       </HeaderWrapper>
-      <CenteredText>{Type}</CenteredText>
+      <CenteredText>{rank}</CenteredText>
     </CardWrapper>
   );
 };

@@ -6,6 +6,7 @@ function App() {
     <div className="App">
       <Components.InfoBar />
       <Components.UpperScreen />
+      <Components.GameScreen />
     </div>
   );
 }
