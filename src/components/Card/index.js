@@ -1,5 +1,4 @@
 //Card Props: Type and Suit -> Draggable Card
-import { ItemTypes } from "./constants";
 import { CardWrapper, CenteredText, HeaderWrapper, StyledText } from "./styled";
 
 import HeartImg from "../../assets/heart.png";
