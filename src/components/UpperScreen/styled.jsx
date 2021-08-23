@@ -5,12 +5,12 @@ export const Container = styled.div`
   width: 100%;
 `;
 
-export const RemainingCards = styled.div`
+export const Remainings = styled.div`
   width: 20%;
   margin: 1%;
   position: relative;
 `;
-export const RemainigCard = styled.img`
+export const Remainig = styled.img`
   display: flex;
   position: absolute;
   max-width: 100%;

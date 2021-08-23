@@ -4,12 +4,16 @@ import Card from "../Card";
 const CardHolder = ({ deck }) => {
   return (
     <Container>
-      <Card rank="K" suit="diamond" top="0px" />
-      <Card rank="K" suit="diamond" top="10px" />
-      <Card rank="K" suit="diamond" top="20px" />
-      <Card rank="K" suit="diamond" top="30px" />
-      <Card rank="K" suit="diamond" top="40px" />
-      <Card rank="K" suit="diamond" top="50px" />
+      {deck?.map((card, i) => (
+        <Card
+          rank={card.rank}
+          suit={card.suit}
+          isDown={card.isDown}
+          isHighlighted={card.isHighlighted}
+          isSelected={card.isSelected}
+          top={20 * i + "px"}
+        />
+      ))}
     </Container>
   );
 };
